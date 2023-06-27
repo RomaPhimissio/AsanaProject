@@ -1,0 +1,15 @@
+.breadcrumb {
+    font-weight: 700;
+    letter-spacing: 1.26px;
+    @include fl(18, 23);
+    color: $grey;
+    padding: 23px 50px 21px;
+    cursor: pointer;
+}
+
+
+
+.breadcrumb.active {
+    font-weight: 700;
+    border-bottom: 4px solid $dark;
+}

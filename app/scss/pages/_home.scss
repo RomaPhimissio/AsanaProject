@@ -1,0 +1,267 @@
+.hero {
+
+    // .hero__container
+
+    &__container {
+        display: flex;
+        padding-top: 50px;
+        align-items: center;
+        gap: 30px;
+
+        @media (max-width: 1750px) {
+            padding-top: 130px;
+        }
+    }
+
+    // .hero__block-content
+
+    &__block-content {
+        flex: 1 1 40%;
+        display: flex;
+        flex-direction: column;
+        gap: 53px;
+    }
+
+    // .hero__title
+
+    &__title {
+        letter-spacing: 6.72px;
+        font-weight: 900;
+        @include fl(96, 95);
+        color: $dark;
+
+        @media (max-width: 1750px) {
+            @include fl(50, 60);
+        }
+    }
+
+    // .hero__text
+
+    &__text {
+        letter-spacing: 1.68px;
+        @include fl(24, 24);
+        color: $dark;
+    }
+
+    // .hero__block-picture
+
+    &__block-picture {
+        flex: 1 1 50%;
+        display: flex;
+        justify-content: space-between;
+        gap: 10px;
+
+    }
+
+    // .hero__picture
+
+    &__picture {
+        position: relative;
+        padding-bottom: 109%;
+        width: 78%;
+        margin-left: 40px;
+
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    // .hero__list
+
+    &__list {
+        align-self: flex-end;
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+        padding-bottom: 86px;
+    }
+
+    // .hero__item
+
+    &__item {
+        span {
+            font-weight: 300;
+            letter-spacing: 2.52px;
+            @include fl(36, 30);
+            color: $greyLight;
+
+        }
+    }
+}
+
+
+// ! Features
+
+.features {
+    background-color: $phone;
+    // .features__container
+
+    &__container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 40px;
+        padding-top: 30px;
+        padding-bottom: 37px;
+    }
+}
+
+
+// ! Products 
+
+.products {
+
+    // .products__container
+
+    &__container {
+        padding-top: 70px;
+        padding-bottom: 96px;
+        padding-left: percent(23, 375);
+        padding-right: percent(23, 375);
+    }
+
+    // .products__breadcrumbs
+
+    &__breadcrumbs {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        border-bottom: 1px solid $black;
+        padding-bottom: 1px;
+        width: max-content;
+        margin: 0 auto;
+        margin-bottom: 108px;
+    }
+
+    // .products__block
+
+    &__block {
+        display: grid;
+        gap: 63px;
+        row-gap: 75px;
+        grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+        margin-bottom: 54px;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+// ! trend 
+
+.trend {
+    background-color: $phone;
+    // .trend__container
+
+    &__container {
+        padding-top: 59px;
+        padding-bottom: 78px;
+        padding-left: percent(23, 375);
+        padding-right: percent(23, 375);
+    }
+
+    // .trend__breadcrumbs
+
+    &__breadcrumbs {
+        display: flex;
+        justify-content: center;
+        width: max-content;
+        margin: 0 auto 68px;
+        gap: 10px;
+        border-bottom: 1px solid $black;
+    }
+
+    // .trend__block-show
+
+    &__block-show {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 63px;
+        margin-bottom: 77px;
+    }
+
+    &__btn-wrap {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+// ! subscribe
+
+.subscribe {
+    // .subscribe__container
+
+    &__container {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 25px;
+        padding-top: 72px;
+        padding-bottom: 72px;
+        padding-left: percent(23, 375);
+        padding-right: percent(23, 375);
+    }
+
+    // .subscribe__text
+
+    &__text {
+        flex: 0 1 40%;
+        font-weight: 700;
+        letter-spacing: 2.1px;
+        @include fl(30, 35);
+    }
+
+    // .subscribe__content
+
+    &__content {
+        display: flex;
+        gap: 50px;
+    }
+
+    // .subscribe__soc-wrap
+
+    &__soc-wrap {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+
+    // .subscribe__soc-btn
+
+    &__soc-btn {}
+
+    // .subscribe__field-block
+
+    &__field-block {
+        display: flex;
+    }
+
+    // .subscribe__field-wrap
+
+    &__field-wrap {
+        border: 2px solid #BFBFBF;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding-left: 27px;
+        padding-right: 176px;
+
+        input {
+            align-self: stretch;
+            padding-top: 10px;
+        }
+
+        input::placeholder {
+            letter-spacing: 1.68px;
+            @include fz(24);
+        }
+    }
+}

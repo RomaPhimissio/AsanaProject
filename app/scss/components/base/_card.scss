@@ -1,0 +1,72 @@
+.card {
+    position: relative;
+    width: 100%;
+    padding-bottom: 20px;
+    // .card__discount
+
+    &__discount {
+        position: absolute;
+
+        font-weight: 700;
+        letter-spacing: 1.4px;
+        @include fl(14, 20);
+        color: $white;
+    }
+
+    // .card__picture
+
+    &__picture {
+        position: relative;
+        padding-bottom: 142%;
+        width: 100%;
+        margin-bottom: 12px;
+
+        img {
+            position: absolute;
+            object-fit: cover;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+        }
+    }
+
+    // .card__elements
+
+    &__elements {
+        display: flex;
+        gap: 15px;
+        justify-content: space-between;
+        align-items: flex-end;
+        margin-bottom: 19px;
+    }
+
+    // .card__sizes
+
+    &__sizes {
+        display: flex;
+        gap: 12px;
+    }
+
+    // .card__btn
+
+    &__btn {
+        color: $greyLight;
+        @include fz(22);
+    }
+
+    // .card__desc
+
+    &__desc {
+        @include fz(16);
+        margin-bottom: 30px;
+    }
+
+    // .card__cost
+
+    &__cost {
+        font-weight: 700;
+        letter-spacing: 2.1px;
+        @include fz(30);
+    }
+}

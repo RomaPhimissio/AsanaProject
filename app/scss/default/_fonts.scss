@@ -1,0 +1,135 @@
+// Подключение локальных шрифтов
+// @include ff("Montserrat", 'SemiBold', );
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/Montserrat-Regular.woff") format("woff"),
+        url("../fonts/Montserrat-Regular.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 300;
+    src: url("../fonts/Montserrat-Light.woff") format("woff"),
+        url("../fonts/Montserrat-Light.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 500;
+    src: url("../fonts/Montserrat-Medium.woff") format("woff"),
+        url("../fonts/Montserrat-Medium.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 700;
+    src: url("../fonts/Montserrat-Bold.woff") format("woff"),
+        url("../fonts/Montserrat-Bold.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-display: swap;
+    font-style: normal;
+    font-weight: 900;
+    src: url("../fonts/Montserrat-Black.woff") format("woff"),
+        url("../fonts/Montserrat-Black.woff2") format("woff2");
+}
+
+//  Icons 
+
+
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.eot?889slp');
+    src: url('../fonts/icomoon.eot?889slp#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?889slp') format('truetype'),
+        url('../fonts/icomoon.woff?889slp') format('woff'),
+        url('../fonts/icomoon.svg?889slp#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+i {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.arrow:before {
+    content: "\e900";
+    color: #fff;
+}
+
+.viber:before {
+    content: "\e901";
+    color: #fff;
+}
+
+.whatsapp:before {
+    content: "\e902";
+    color: #fff;
+}
+
+.search:before {
+    content: "\e903";
+}
+
+.basket:before {
+    content: "\e904";
+}
+
+.user:before {
+    content: "\e905";
+}
+
+.favorite:before {
+    content: "\e906";
+}
+
+.instagram:before {
+    content: "\e907";
+    color: #fff;
+}
+
+.logo:before {
+    content: "\e908";
+}
+
+.phone:before {
+    content: "\e909";
+}
+
+.telegram:before {
+    content: "\e90a";
+    color: #fff;
+}
+
+.star:before {
+    content: "\e90d";
+}
+
+.sign:before {
+    content: "\e90e";
+    color: #fff;
+}

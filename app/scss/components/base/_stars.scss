@@ -1,0 +1,15 @@
+.stars {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3px;
+}
+
+.star {
+    color: #000;
+    @include fz(25);
+}
+
+.star.active {
+    color: crimson;
+}

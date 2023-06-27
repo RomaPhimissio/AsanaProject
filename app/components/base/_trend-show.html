@@ -1,0 +1,17 @@
+<div class="show">
+  <div class="show__picture">
+    <picture>
+      <source type="image/webp" srcset="@img/gallery/man.webp">
+      <img src="@img/gallery/man.png" alt="man" loading="lazy">
+    </picture>
+  </div>
+  <div class="show__overlay"></div>
+  <div class="show__content">
+    <h3 class="show__subtitle">Тренды мужской одежды 2020</h3>
+    <p class="show__text">@@text</p>
+    @@include('_btn.html', {
+    'text': 'ЧИТАТЬ',
+    'class': 'btn-show'
+    })
+  </div>
+</div>
