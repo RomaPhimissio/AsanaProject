@@ -32,24 +32,47 @@
       min-height: 154px; // todo Указываем минимальную высоту шапки
       display: flex;
       align-items: center;
+
+      @media (max-width: 999px) {
+         justify-content: space-between;
+      }
    }
 
    &__logo {
-      z-index: 3;
-      font-size: 35px;
-      transition: all 0.3s ease;
+      @media (max-width: 999px) {
+         display: none;
+      }
+
+      @media (min-width: 1000px) {
+         z-index: 3;
+         font-size: 35px;
+         transition: all 0.3s ease;
+      }
+
 
       &:hover {
          @media (min-width: 1000px) {
             transform: scale(1.07);
          }
       }
+
+      .logo {
+         color: $black;
+         @include fz(45);
+      }
    }
 
-   .logo {
-      color: $black;
-      @include fz(45);
+   &__logo-mob {
+      @media (min-width: 1000px) {
+         display: none;
+      }
+
+      .logo {
+         @include fz(70);
+      }
    }
+
+
 
    &__nav {
       display: flex;
@@ -72,7 +95,7 @@
          z-index: 2;
          overflow: auto;
          left: -100vw;
-         padding-top: 100px;
+         padding-top: 150px;
          padding-bottom: 20px;
          top: 0;
          height: 100vh;
@@ -81,6 +104,8 @@
          padding-left: percent(30, 768);
          padding-right: percent(30, 768);
          transition: all 0.3s ease 0s;
+         flex-direction: column-reverse;
+         justify-content: flex-end;
       }
 
       @media (max-width: 1650px) {
@@ -130,7 +155,7 @@
          }
 
          .arrow {
-            color: $grey;
+            color: red;
          }
       }
 
@@ -140,12 +165,46 @@
       }
    }
 
+   &__item-open {
+      @media (min-width: 1000px) {
+         margin-right: 10px;
+      }
+   }
+
+   &__open-icon {
+      @media (max-width: 999px) {
+         display: none;
+      }
+
+      @media (min-width: 1000px) {
+         transition: all 0.2s ease 0s;
+      }
+   }
+
+   &__link-open:hover {
+      .header__open-icon {
+         @media (min-width: 1000px) {
+            transform: rotate(180deg);
+         }
+      }
+   }
+
    // .header__bar-list
 
    &__bar-list {
       display: flex;
       gap: 73px;
       margin-left: auto;
+
+      @media (max-width: 767px) {
+         gap: 40px;
+      }
+
+      @media (max-width: 999px) {
+         margin: 0;
+         gap: 20px;
+         flex-wrap: wrap;
+      }
 
       @media (max-width: 1650px) {
          gap: 40px;
