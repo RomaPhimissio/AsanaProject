@@ -136,13 +136,24 @@ new Swiper('.swiper', {
       onlyInViewport: true,
       pageUpDown: true
    },
-   // direction: "vertical",
+   speed: 600,
+   direction: "vertical",
+   mousewheel: true,
    pagination: {
-      el: ".swiper-pagination",
+      el: ".hero__pagination",
       clickable: true,
+      renderBullet: function (index, className) {
+         let number = (index + 1).toString().padStart(2, "0");
+         let bulletContent = '<span class="bullet-number">' + number + '</span>';
+         if (className.includes("swiper-pagination-bullet-active")) {
+            bulletContent = '<span class="bullet-number bullet-active">' + number + '</span>';
+         }
+         return '<span class="' + className + '">' + bulletContent + '</span>';
+      }
    },
+
    slidesPerView: 1,
-   spaceBetween: 35
+   spaceBetween: 30,
 });
 
 // ! Rating stars 

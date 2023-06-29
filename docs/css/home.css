@@ -352,7 +352,7 @@ img {
   width: 100%;
   top: 0;
   left: 0;
-  z-index: 1;
+  z-index: 2;
 }
 
 .header__body {
@@ -747,49 +747,6 @@ img {
   }
 }
 
-.swip {
-  overflow: hidden;
-}
-
-.swip__body {
-  display: flex;
-}
-
-.swip__block:first-child {
-  background-color: royalblue;
-}
-
-.swip__block:nth-child(2) {
-  background-color: mediumorchid;
-}
-
-.swip__block:nth-child(3) {
-  background-color: lightcoral;
-}
-
-.swip__block:nth-child(4) {
-  background-color: rebeccapurple;
-}
-
-.swip__block:nth-child(5) {
-  background-color: crimson;
-}
-
-.swip__content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 300px;
-}
-
-.swip__content p {
-  text-align: center;
-  color: #fff;
-  font-size: 1.5625em;
-  line-height: 1;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-}
-
 .stars {
   display: flex;
   justify-content: center;
@@ -996,10 +953,11 @@ img {
 
 .btn {
   cursor: pointer;
-  padding: 25px 90px 26px;
+  padding: 25px 85px 26px 90px;
   background-color: transparent;
-  letter-spacing: 1.26px;
+  letter-spacing: 2.7px;
   font-size: 1.125em;
+  line-height: normal;
   border: 1px solid #0F0F0F;
   max-width: 400px;
   min-height: 40px;
@@ -1076,61 +1034,115 @@ img {
 }
 
 .hero__container {
+  padding-left: 5.6%;
   display: flex;
-  padding-top: 50px;
+  padding-top: 32px;
   align-items: center;
-  gap: 30px;
+  gap: 68px;
 }
 
 .hero__block-content {
-  flex: 1 1 40%;
+  padding-top: 35px;
+  flex: 0 1 40%;
   display: flex;
   flex-direction: column;
-  gap: 53px;
+  gap: 22px;
 }
 
 .hero__title {
-  letter-spacing: 6.72px;
+  letter-spacing: 6px;
   font-weight: 900;
   font-size: 6em;
-  line-height: 0.9895833333;
+  line-height: 1.0416666667;
   color: #0F0F0F;
 }
 
 .hero__text {
+  padding-left: 5px;
   letter-spacing: 1.68px;
   font-size: 1.5em;
-  line-height: 1;
+  line-height: normal;
   color: #0F0F0F;
+  margin-bottom: 38px;
 }
 
-.hero .swiper {
-  width: 100%;
-  height: 100%;
+.hero__btn-wrap {
+  padding-left: 10px;
 }
 
 .hero__block-picture {
-  flex: 1 1 50%;
+  position: relative;
+  flex: 1 1 60%;
   display: flex;
   gap: 10px;
-  overflow: hidden;
-  height: 600px;
+  height: 1044px;
 }
 
-.hero__list {
+.hero__picture {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__picture img {
+  position: absolute;
+  -o-object-fit: contain;
+  object-fit: contain;
+  -o-object-position: 30%;
+  object-position: 30%;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.hero__pagination {
+  transform: translate3d(-20%, -29%, 0) !important;
   align-self: flex-end;
   display: flex;
   flex-direction: column;
-  gap: 40px;
-  padding-bottom: 86px;
+  gap: 18px;
 }
 
-.hero__item span {
-  font-weight: 300;
-  letter-spacing: 2.52px;
+.hero .swiper-pagination-bullet {
   font-size: 2.25em;
-  line-height: 0.8333333333;
-  color: #CECECE;
+  width: auto;
+  height: auto;
+  background-color: initial;
+  position: relative;
+  letter-spacing: 2.52px;
+  font-weight: 300;
+  transition: all 0.2s ease 0s;
+  text-align: right;
+}
+
+.hero .swiper-pagination-bullet:focus {
+  outline: none;
+}
+
+.hero .swiper-pagination-bullet-active {
+  color: #0F0F0F;
+  letter-spacing: 4.48px;
+  padding: 10px 0;
+  font-weight: 700;
+  transition: all 0.2s ease 0s;
+  transform: scale(1.73) translate(-16%, 0%);
+}
+
+.hero .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+  transition: all 0.2s ease 0s;
+  content: "";
+  position: absolute;
+  width: 23px;
+  height: 2px;
+  background-color: #0F0F0F;
+  transition: all 0.2s ease 0s;
+  display: inline-block;
+  left: -29px;
+  top: 0;
+  bottom: 0;
+  margin: auto 0;
 }
 
 .features {
@@ -1315,11 +1327,20 @@ img {
 @media (max-width: 1750px) {
   .hero__container {
     padding-top: 130px;
+    align-items: initial;
+  }
+
+  .hero__block-content {
+    padding-top: 250px;
   }
 
   .hero__title {
-    font-size: 3.125em;
-    line-height: 1.2;
+    font-size: 4.6875em;
+    line-height: 1.0666666667;
+  }
+
+  .hero__block-picture {
+    height: 900px;
   }
 }
 
@@ -1334,6 +1355,17 @@ img {
 
   .header__bar-list {
     gap: 40px;
+  }
+}
+
+@media (max-width: 1499px) {
+  .hero__block-content {
+    gap: 40px;
+  }
+
+  .hero__title {
+    font-size: 3.4375em;
+    line-height: 1.0909090909;
   }
 }
 

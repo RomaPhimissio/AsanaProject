@@ -3,107 +3,156 @@
     // .hero__container
 
     &__container {
+        padding-left: percent(21, 375);
         display: flex;
-        padding-top: 50px;
+        padding-top: 32px;
         align-items: center;
-        gap: 30px;
+        gap: 68px;
 
         @media (max-width: 1750px) {
             padding-top: 130px;
+            align-items: initial;
         }
     }
 
     // .hero__block-content
 
     &__block-content {
-        flex: 1 1 40%;
+        padding-top: 35px;
+        flex: 0 1 40%;
         display: flex;
         flex-direction: column;
-        gap: 53px;
+        gap: 22px;
+
+        @media (max-width: 1499px) {
+            gap: 40px;
+        }
+
+        @media (max-width: 1750px) {
+            padding-top: 250px;
+        }
     }
 
     // .hero__title
 
     &__title {
-        letter-spacing: 6.72px;
+        letter-spacing: 6px;
         font-weight: 900;
-        @include fl(96, 95);
+        @include fl(96, 100);
+
         color: $dark;
 
+        @media (max-width: 1499px) {
+            @include fl(55, 60);
+        }
+
         @media (max-width: 1750px) {
-            @include fl(50, 60);
+            @include fl(75, 80);
         }
     }
 
     // .hero__text
 
     &__text {
+        padding-left: 5px;
         letter-spacing: 1.68px;
-        @include fl(24, 24);
+        @include fz(24);
+        line-height: normal;
         color: $dark;
+        margin-bottom: 38px;
     }
 
-    .swiper {
-        width: 100%;
-        height: 100%;
+    &__btn-wrap {
+        padding-left: 10px;
     }
 
     // .hero__block-picture
 
     &__block-picture {
-        flex: 1 1 50%;
+        position: relative;
+        flex: 1 1 60%;
         display: flex;
         gap: 10px;
-        overflow: hidden;
-        height: 600px;
-    }
+        height: 1044px;
 
-    &__block-picture-body {}
+        @media (max-width: 1750px) {
+            height: 900px;
+        }
+    }
 
     // .hero__picture
 
     &__picture {
-        // position: relative;
-        // padding-bottom: 109%;
-        // width: 78%;
-        // margin-left: 40px;
-
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
         img {
-            // position: absolute;
-            // object-fit: cover;
-            // width: 100%;
-            // height: 100%;
-            // top: 0;
-            // left: 0;
+            position: absolute;
+            object-fit: contain;
+            object-position: 30%;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
         }
     }
 
     // .hero__list
 
-    &__list {
+    &__pagination {
+        transform: translate3d(-20%, -29%, 0) !important;
         align-self: flex-end;
         display: flex;
         flex-direction: column;
-        gap: 40px;
-        padding-bottom: 86px;
+        gap: 18px;
     }
 
-    // .hero__item
-
-    &__item {
-        span {
-            font-weight: 300;
-            letter-spacing: 2.52px;
-            @include fl(36, 30);
-            color: $greyLight;
-
-        }
+    // Кастомизируем буллеты цифрами
+    .swiper-pagination-bullet {
+        @include fz(36);
+        // меняем стандартные стили
+        width: auto;
+        height: auto;
+        background-color: initial;
+        // меняем стандартные стили
+        position: relative;
+        letter-spacing: 2.52px;
+        font-weight: 300;
+        transition: all 0.2s ease 0s;
+        text-align: right;
     }
 
+    .swiper-pagination-bullet:focus {
+        outline: none;
+    }
 
+    .swiper-pagination-bullet-active {
+        color: $dark;
+        letter-spacing: 4.48px;
+        padding: 10px 0;
+        font-weight: 700;
+        transition: all 0.2s ease 0s;
+        transform: scale(1.73) translate(-16%, 0%);
+    }
+
+    // Добавляем тире 
+    .swiper-pagination-bullet.swiper-pagination-bullet-active::before {
+        transition: all 0.2s ease 0s;
+        content: "";
+        position: absolute;
+        width: 23px;
+        height: 2px;
+        background-color: $dark;
+        transition: all 0.2s ease 0s;
+        display: inline-block;
+        left: -29px;
+        top: 0;
+        bottom: 0;
+        margin: auto 0;
+    }
 }
-
 
 // ! Features
 

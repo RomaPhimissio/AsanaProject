@@ -2,7 +2,7 @@
 @@include('./components/structure/_head.html', {
 'lang':'en',
 'css': './css/home.min.css',
-'title': 'Home',
+'title': 'Shopping',
 'swiper': '',
 })
 
@@ -16,44 +16,36 @@
           <div class="hero__block-content">
             <h2 class="hero__title">МУЖСКАЯ КОЛЛЕКЦИЯ</h2>
             <p class="hero__text">Распродажа коллекций со скидками до 50%, доставка до вашего склада</p>
-            @@include('./components/base/_btn.html', {
-            'text': 'ПОДРОБНЕЕ',
-            'class': 'btn'
-            })
-          </div>
-          <div class="hero__block-picture swiper">
-            <div class="hero__block-picture-body swiper-wrapper">
-              <div class="hero__picture swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="@img/gallery/hero.webp">
-                  <img src="@img/gallery/hero.png" alt="style">
-                </picture>
-              </div>
-              <div class="hero__picture swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="@img/gallery/hero.webp">
-                  <img src="@img/gallery/hero.png" alt="style">
-                </picture>
-              </div>
-              <div class="hero__picture swiper-slide">
-                <picture>
-                  <source type="image/webp" srcset="@img/gallery/hero.webp">
-                  <img src="@img/gallery/hero.png" alt="style">
-                </picture>
-              </div>
-              <!-- <ul class="hero__list">
-              <li class="hero__item"><span>01</span></li>
-              <li class="hero__item"><span>02</span></li>
-              <li class="hero__item"><span>03</span></li>
-              <li class="hero__item"><span>04</span></li>
-            </ul> -->
+            <div class="hero__btn-wrap">
+              @@include('./components/base/_btn.html', {
+              'text': 'ПОДРОБНЕЕ',
+              'class': 'btn'
+              })
             </div>
           </div>
+          <div class="hero__block-picture swiper">
+            <div class="swiper-wrapper">
+              @@include('./components/base/_slide.html', {
+              'load': 'eager'
+              })
+              @@include('./components/base/_slide.html', {
+              'load': 'lazy'
+              })
+              @@include('./components/base/_slide.html', {
+              'load': 'lazy'
+              })
+              @@include('./components/base/_slide.html', {
+              'load': 'lazy'
+              })
+            </div>
+            <div class="hero__pagination">
+            </div>
+          </div>
+
         </div>
       </section>
-      <section class="features">
+      <!-- <section class="features">
         <h2 class="visually-hidden">Stock</h2>
-
         <div class="features__container">
           @@include('./components/base/_discount.html', {
           'number': '1',
@@ -71,8 +63,8 @@
           'text': 'На все футболки серии Лето 2019 при заказе от 2000 грн.'
           })
         </div>
-      </section>
-      <section class="products">
+      </section> -->
+      <!-- <section class="products">
         <h2 class="visually-hidden">Products</h2>
         <div class="products__container">
           <div class="products__breadcrumbs">
@@ -103,8 +95,8 @@
             })
           </div>
         </div>
-      </section>
-      <section class="trend">
+      </section> -->
+      <!-- <section class="trend">
         <div class="trend__container">
           <div class="trend__breadcrumbs">
             @@include('./components/base/_breadcrumb.html', {
@@ -129,8 +121,8 @@
             })
           </div>
         </div>
-      </section>
-      <section class="subscribe">
+      </section> -->
+      <!-- <section class="subscribe">
         <h2 class="visually-hidden">Subscribe block</h2>
         <div class="subscribe__container">
           <p class="subscribe__text">Подпишись и следи за новыми поступлениями и акциями</p>
@@ -169,7 +161,7 @@
             </div>
           </div>
         </div>
-      </section>
+      </section> -->
     </main>
     @@include('./components/structure/_footer.html')
   </div>

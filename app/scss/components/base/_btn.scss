@@ -1,9 +1,10 @@
 .btn {
    cursor: pointer;
-   padding: 25px 90px 26px;
+   padding: 25px 85px 26px 90px;
    background-color: transparent;
-   letter-spacing: 1.26px;
+   letter-spacing: 2.7px;
    @include fz(18);
+   line-height: normal;
    border: 1px solid $dark;
    max-width: 400px;
    min-height: 40px;
