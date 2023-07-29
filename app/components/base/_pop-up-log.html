@@ -1,0 +1,33 @@
+<div class="pop-up-log">
+  <div class="pop-up-log__wrap">
+    <div class="pop-up-log__body">
+      <button class="pop-up-log__btn-close">
+        <span class="pop-up-log__close-elem"></span>
+        <span class="pop-up-log__close-elem"></span>
+      </button>
+      <div class="pop-up-log__block-check">
+        @@include('_btn.html', {
+        'text': 'ЛОГИН',
+        'class': 'btn-pop-up'
+        })
+        @@include('_btn.html', {
+        'text': 'РЕГИСТРАЦИЯ',
+        'class': 'btn-pop-up2'
+        })
+      </div>
+      <div class="pop-up-log__content">
+        <div class="pop-up-log__block-field">
+          <input class="pop-up-log__field" type="email" name="" placeholder="Введите email">
+          <input class="pop-up-log__field" type="password" name="" placeholder="Введите пароль">
+        </div>
+        @@include('_btn.html', {
+        'text': 'ЗАРЕГИСТРИРОВАТЬСЯ',
+        'class': 'btn-pop-up3'
+        })
+        <div class="pop-up-log__password-link-wrap">
+          <a href="#" class="pop-up-log__password-link">Забыли пароль?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

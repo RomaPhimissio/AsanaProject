@@ -41,12 +41,11 @@
             <div class="hero__pagination">
             </div>
           </div>
-
         </div>
       </section>
-      <!-- <section class="features">
+      <section class="features swiper">
         <h2 class="visually-hidden">Stock</h2>
-        <div class="features__container">
+        <div class="features__container swiper-wrapper">
           @@include('./components/base/_discount.html', {
           'number': '1',
           'par': 'Акции- Новая серия',
@@ -63,8 +62,8 @@
           'text': 'На все футболки серии Лето 2019 при заказе от 2000 грн.'
           })
         </div>
-      </section> -->
-      <!-- <section class="products">
+      </section>
+      <section class="products">
         <h2 class="visually-hidden">Products</h2>
         <div class="products__container">
           <div class="products__breadcrumbs">
@@ -95,7 +94,7 @@
             })
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="trend">
         <div class="trend__container">
           <div class="trend__breadcrumbs">
@@ -162,6 +161,9 @@
           </div>
         </div>
       </section> -->
+      @@include('./components/base/_pop-up.html')
+      @@include('./components/base/_pop-up-log.html')
+      @@include('./components/base/_pop-up-password.html')
     </main>
     @@include('./components/structure/_footer.html')
   </div>

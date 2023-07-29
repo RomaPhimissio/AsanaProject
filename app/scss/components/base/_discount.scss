@@ -39,6 +39,9 @@
         color: $dark;
         @include fl(30, 25);
 
+        @media (max-width: 449px) {
+            @include fl(22, 22);
+        }
     }
 
     // .feat__text
@@ -48,5 +51,9 @@
         letter-spacing: 1.12px;
         @include fl(16, 20);
         color: $dark;
+
+        @media (max-width: 449px) {
+            @include fl(16, 18);
+        }
     }
 }

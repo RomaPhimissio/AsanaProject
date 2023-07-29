@@ -49,6 +49,10 @@
         gap: 25px;
         min-height: 450px;
         padding: 0 15%;
+
+        @media (max-width: 499px) {
+            padding: 0 5%;
+        }
     }
 
     // .show__subtitle
@@ -59,6 +63,10 @@
         @include fz(36);
         color: $white;
         text-align: center;
+
+        @media (max-width: 499px) {
+            @include fz(30);
+        }
     }
 
     // .show__taxt
@@ -72,7 +80,9 @@
 
     &:hover {
         .show__overlay {
-            opacity: 0.8999999761581421;
+            @media (min-width: 1000px) {
+                opacity: 0.8999999761581421;
+            }
         }
     }
 }

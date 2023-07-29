@@ -6,10 +6,21 @@
    @include fz(18);
    line-height: normal;
    border: 1px solid $dark;
-   max-width: 400px;
+   // max-width: 500px;
    min-height: 40px;
-   max-height: 70px;
    transition: all 0.2s ease;
+
+   @media (max-width: 750px) {
+      padding: 15px 30px;
+   }
+
+   @media (max-width: 899px) {
+      padding: 20px 55px 21px 55px;
+   }
+
+   @media (max-width: 1299px) {
+      flex-grow: 1;
+   }
 
    &:hover {
       background-color: $dark;
@@ -25,11 +36,12 @@
    letter-spacing: 1.26px;
    @include fz(18);
    border: 1px solid $dark;
-   max-width: 450px;
-   min-height: 40px;
-   max-height: 70px;
    transition: all 0.2s ease;
    text-transform: uppercase;
+
+   @media (max-width: 767px) {
+      padding: 23px 20px 24px;
+   }
 
    &:hover {
       background-color: $dark;
@@ -51,6 +63,10 @@
    max-height: 70px;
    transition: all 0.2s ease;
    text-transform: uppercase;
+
+   @media (max-width: 499px) {
+      padding: 17px 40px 18px;
+   }
 
    &:hover {
       background-color: $white;
@@ -80,4 +96,48 @@
       color: $dark;
       border: 1px solid $dark;
    }
+}
+
+.btn-pop-up {
+   cursor: pointer;
+   max-width: 292px;
+   width: 100%;
+   padding: 25px 20px 22px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 1.26px;
+   @include fz(18);
+   border: 3px solid $dark;
+
+   @media (max-width: 767px) {
+      flex-grow: 1;
+      max-width: none;
+   }
+}
+
+.btn-pop-up2 {
+   cursor: pointer;
+   max-width: 292px;
+   width: 100%;
+   padding: 25px 20px 22px;
+   font-weight: 700;
+   line-height: normal;
+   letter-spacing: 1.26px;
+   @include fz(18);
+   border: 3px solid $dark;
+   background-color: $dark;
+   color: $white;
+
+   @media (max-width: 767px) {
+      flex-grow: 1;
+      max-width: none;
+   }
+}
+
+.btn-pop-up3 {
+   cursor: pointer;
+   width: 100%;
+   padding: 24px 25px 23px;
+   background-color: $dark;
+   color: $white;
 }

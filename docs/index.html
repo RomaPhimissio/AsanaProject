@@ -23,6 +23,60 @@
           <span></span>
         </div>
       </div>
+      <div class="catalog">
+        <div class="catalog__container">
+          <div class="catalog__main-link-wrap">
+            <a href="#" class="catalog__main-link">
+              <span>КАТАЛОГ</span>
+              <svg width="13" height="8" viewBox="0 0 13 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="Vector"
+                  d="M11.4671 -1.45631e-07L6.5 4.94673L1.53293 -1.94682e-08L-2.45768e-08 1.52661L6.5 8L13 1.52661L11.4671 -1.45631e-07Z"
+                  fill="#0F0F0F" />
+              </svg>
+            </a>
+          </div>
+          <div class="catalog__btn-assort">
+            <button class="btn">Мужская одежда</button>
+            <button class="btn">Женская одежда</button>
+            <button class="btn">Детская одежда</button>
+          </div>
+          <div class="catalog__columns">
+            <div class="catalog-col">
+  <h3 class="catalog-col__subtitle">Верхняя одежда</h3>
+  <div class="catalog-col__text-block">
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Футболки ПОЛО</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Лоргсливы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Свитшоте Регланы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Толстовки Худи </a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Анораки Ветровки</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Спортивные штаны</a></p>
+  </div>
+</div>
+            <div class="catalog-col">
+  <h3 class="catalog-col__subtitle">Штаны</h3>
+  <div class="catalog-col__text-block">
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Футболки ПОЛО</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Лоргсливы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Свитшоте Регланы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Толстовки Худи </a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Анораки Ветровки</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Спортивные штаны</a></p>
+  </div>
+</div>
+            <div class="catalog-col">
+  <h3 class="catalog-col__subtitle">Аксессуары</h3>
+  <div class="catalog-col__text-block">
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Футболки ПОЛО</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Лоргсливы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Свитшоте Регланы</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Толстовки Худи </a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Анораки Ветровки</a></p>
+    <p class="catalog-col__text"><a href="#" class="catalog-col__link">Спортивные штаны</a></p>
+  </div>
+</div>
+          </div>
+        </div>
+      </div>
       <nav class="header__nav">
         <ul class="header__list">
           <li class="header__item">
@@ -51,8 +105,8 @@
                 class="favorite"></i></button></li>
           <li class="header__bar-item"><button class="header__bar-btn"><span class="visually-hidden">Busket</span><i
                 class="basket"></i></button></li>
-          <li class="header__bar-item"><button class="header__bar-btn"><span class="visually-hidden">User</span><i
-                class="user"></i></button></li>
+          <li class="header__bar-item"><button class="header__bar-btn header__bar-btn-user"><span
+                class="visually-hidden">User</span><i class="user"></i></button></li>
         </ul>
       </nav>
       <a class="header__logo-mob" href="index.html" aria-label="Logotype Hector"><i class="logo"></i></a>
@@ -100,13 +154,12 @@
             <div class="hero__pagination">
             </div>
           </div>
-
         </div>
       </section>
-      <!-- <section class="features">
+      <section class="features swiper">
         <h2 class="visually-hidden">Stock</h2>
-        <div class="features__container">
-          <div class="discount">
+        <div class="features__container swiper-wrapper">
+          <div class="discount swiper-slide">
   <div class="discount__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/discount1.webp">
@@ -118,7 +171,7 @@
     <p class="discount__text">Мужские футболки с модными принтами в стиле Хайтек</p>
   </div>
 </div>
-          <div class="discount">
+          <div class="discount swiper-slide">
   <div class="discount__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/discount2.webp">
@@ -130,7 +183,7 @@
     <p class="discount__text">Распродажа со скидками до 50%. Мужские футболки всех размеров.</p>
   </div>
 </div>
-          <div class="discount">
+          <div class="discount swiper-slide">
   <div class="discount__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/discount3.webp">
@@ -143,8 +196,8 @@
   </div>
 </div>
         </div>
-      </section> -->
-      <!-- <section class="products">
+      </section>
+      <section class="products">
         <h2 class="visually-hidden">Products</h2>
         <div class="products__container">
           <div class="products__breadcrumbs">
@@ -154,7 +207,11 @@
           </div>
           <div class="products__block">
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -163,11 +220,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -179,7 +266,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -188,11 +279,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -204,7 +325,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -213,11 +338,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -229,7 +384,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -238,11 +397,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -254,7 +443,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -263,11 +456,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -279,7 +502,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -288,11 +515,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -304,7 +561,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -313,11 +574,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -329,7 +620,11 @@
   <span class="card__cost">245₴</span>
 </div>
             <div class="card">
-  <span class="card__discount">NEW</span>
+  <div class="card__discount-block">
+    <div class="card__discount-main">
+      <span class="card__discount">NEW</span>
+    </div>
+  </div>
   <div class="card__picture">
     <picture>
       <source type="image/webp" srcset="img/gallery/card.webp">
@@ -338,11 +633,41 @@
   </div>
   <div class="card__elements">
     <div class="stars">
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
-  <i class="star"></i>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
+  <span class="stars__star">
+    <svg width="26" height="25" viewBox="0 0 26 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path
+        d="M21.0321 24.3333L13 20.254L4.96795 24.3333L6.5019 15.6936L0 9.57462L8.98121 8.31443L13 0.333252L17.0188 8.31443L26 9.57462L19.4981 15.6935L21.0321 24.3333Z"
+        fill="black" />
+    </svg>
+  </span>
 </div>
     <div class="card__sizes">
       <button class="card__btn">S</button>
@@ -358,7 +683,7 @@
             <button class="btn-prod">Посмотреть каталог</button>
           </div>
         </div>
-      </section> -->
+      </section>
       <!-- <section class="trend">
         <div class="trend__container">
           <div class="trend__breadcrumbs">
@@ -437,6 +762,71 @@
           </div>
         </div>
       </section> -->
+      <div class="pop-up">
+  <div class="pop-up__wrap">
+    <div class="pop-up__body">
+      <button class="pop-up__btn-close">
+        <span class="pop-up__close-elem"></span>
+        <span class="pop-up__close-elem"></span>
+      </button>
+      <div class="pop-up__block-check">
+        <button class="btn-pop-up">ЛОГИН</button>
+        <button class="btn-pop-up2">РЕГИСТРАЦИЯ</button>
+      </div>
+      <div class="pop-up__content">
+        <div class="pop-up__block-field">
+          <input class="pop-up__field" type="text" name="" placeholder="Введите имя">
+          <input class="pop-up__field" type="text" name="" placeholder="Ваш Город">
+          <input class="pop-up__field" type="tel" name="" placeholder="Введите телефон">
+          <input class="pop-up__field" type="email" name="" placeholder="Введите email">
+          <input class="pop-up__field" type="password" name="" placeholder="Введите пароль">
+          <input class="pop-up__field" type="password" name="" placeholder="Подтвердите  пароль">
+        </div>
+        <button class="btn-pop-up3">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="pop-up-log">
+  <div class="pop-up-log__wrap">
+    <div class="pop-up-log__body">
+      <button class="pop-up-log__btn-close">
+        <span class="pop-up-log__close-elem"></span>
+        <span class="pop-up-log__close-elem"></span>
+      </button>
+      <div class="pop-up-log__block-check">
+        <button class="btn-pop-up">ЛОГИН</button>
+        <button class="btn-pop-up2">РЕГИСТРАЦИЯ</button>
+      </div>
+      <div class="pop-up-log__content">
+        <div class="pop-up-log__block-field">
+          <input class="pop-up-log__field" type="email" name="" placeholder="Введите email">
+          <input class="pop-up-log__field" type="password" name="" placeholder="Введите пароль">
+        </div>
+        <button class="btn-pop-up3">ЗАРЕГИСТРИРОВАТЬСЯ</button>
+        <div class="pop-up-log__password-link-wrap">
+          <a href="#" class="pop-up-log__password-link">Забыли пароль?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      <div class="pop-up-password">
+  <div class="pop-up-password__wrap">
+    <div class="pop-up-password__body">
+      <button class="pop-up-password__btn-close">
+        <span class="pop-up-password__close-elem"></span>
+        <span class="pop-up-password__close-elem"></span>
+      </button>
+      <div class="pop-up-password__content">
+        <div class="pop-up-password__block-field">
+          <input class="pop-up-password__field" type="email" name="" placeholder="Введите email">
+        </div>
+        <button class="btn-pop-up3">ВОССТАНОВИТЬ</button>
+      </div>
+    </div>
+  </div>
+</div>
     </main>
     <footer class="footer">
 	<div class="footer__container">

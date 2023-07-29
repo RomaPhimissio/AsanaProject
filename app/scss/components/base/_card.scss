@@ -2,15 +2,40 @@
     position: relative;
     width: 100%;
     padding-bottom: 20px;
+
+
+    &__discount-block {
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__discount-main::before {
+        content: '';
+        position: absolute;
+        top: -42px;
+        left: -42px;
+        border: 42px solid transparent;
+        border-top-color: $dark;
+        /* Цвет границы треугольника, такой же как цвет фона */
+        transform: rotate(135deg);
+        z-index: 1;
+    }
+
     // .card__discount
 
     &__discount {
         position: absolute;
-
+        z-index: 2;
         font-weight: 700;
         letter-spacing: 1.4px;
         @include fl(14, 20);
         color: $white;
+        display: inline-block;
+        padding-top: 7px;
+        padding-right: 10px;
+        transform: rotate(-45deg);
     }
 
     // .card__picture
@@ -53,6 +78,11 @@
     &__btn {
         color: $greyLight;
         @include fz(22);
+        cursor: pointer;
+    }
+
+    &__btn.active {
+        color: $dark;
     }
 
     // .card__desc
@@ -69,4 +99,8 @@
         letter-spacing: 2.1px;
         @include fz(30);
     }
+}
+
+.star {
+    cursor: pointer;
 }

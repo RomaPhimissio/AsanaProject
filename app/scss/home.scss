@@ -12,6 +12,8 @@
 
 // Подключение стилей базовых компонентов
 @import "./components/base/pop-up";
+@import "./components/base/pop-up-log";
+@import "./components/base/pop-up-password";
 @import "./components/base/dropdown";
 @import "./components/base/accordeon";
 @import "./components/base/preloader";
@@ -20,6 +22,7 @@
 @import "./components/base/card";
 @import "./components/base/breadcrumb";
 @import "./components/base/trend-show";
+@import "./components/base/catalog-column";
 
 // Подключение стилей компонентов
 @import "./components/base/btn";

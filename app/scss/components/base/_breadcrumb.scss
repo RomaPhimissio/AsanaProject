@@ -5,11 +5,19 @@
     color: $grey;
     padding: 23px 50px 21px;
     cursor: pointer;
+    position: relative;
 }
 
-
+.breadcrumb.active::after {
+    content: "";
+    position: absolute;
+    background-color: $dark;
+    width: 100%;
+    left: 0;
+    bottom: -1px;
+    height: 6px;
+}
 
 .breadcrumb.active {
-    font-weight: 700;
-    border-bottom: 4px solid $dark;
+    color: $black;
 }

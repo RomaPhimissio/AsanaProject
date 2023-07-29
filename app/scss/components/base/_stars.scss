@@ -3,13 +3,28 @@
     justify-content: center;
     align-items: center;
     gap: 3px;
+
+    &__star {
+        cursor: pointer;
+        width: 26px;
+        height: 24px;
+
+        svg {
+            path {
+                fill: transparent;
+                stroke: $dark;
+                stroke-width: 2px;
+            }
+        }
+    }
 }
 
-.star {
-    color: #000;
-    @include fz(25);
-}
 
-.star.active {
-    color: crimson;
+
+.stars__star.active {
+    svg {
+        path {
+            fill: $dark;
+        }
+    }
 }

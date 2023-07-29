@@ -1,35 +1,34 @@
 <div class="pop-up">
-	<div class="pop-up__wrapper">
-		<div class="pop-up__body">
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-			<p>A lot of text on this string?</p>
-		</div>
-	</div>
-
+  <div class="pop-up__wrap">
+    <div class="pop-up__body">
+      <button class="pop-up__btn-close">
+        <span class="pop-up__close-elem"></span>
+        <span class="pop-up__close-elem"></span>
+      </button>
+      <div class="pop-up__block-check">
+        @@include('_btn.html', {
+        'text': 'ЛОГИН',
+        'class': 'btn-pop-up'
+        })
+        @@include('_btn.html', {
+        'text': 'РЕГИСТРАЦИЯ',
+        'class': 'btn-pop-up2'
+        })
+      </div>
+      <div class="pop-up__content">
+        <div class="pop-up__block-field">
+          <input class="pop-up__field" type="text" name="" placeholder="Введите имя">
+          <input class="pop-up__field" type="text" name="" placeholder="Ваш Город">
+          <input class="pop-up__field" type="tel" name="" placeholder="Введите телефон">
+          <input class="pop-up__field" type="email" name="" placeholder="Введите email">
+          <input class="pop-up__field" type="password" name="" placeholder="Введите пароль">
+          <input class="pop-up__field" type="password" name="" placeholder="Подтвердите  пароль">
+        </div>
+        @@include('_btn.html', {
+        'text': 'ЗАРЕГИСТРИРОВАТЬСЯ',
+        'class': 'btn-pop-up3'
+        })
+      </div>
+    </div>
+  </div>
 </div>

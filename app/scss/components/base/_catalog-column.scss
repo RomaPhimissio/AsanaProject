@@ -1,0 +1,39 @@
+.catalog-col {
+
+    // .catalog-col__subtitle
+
+    &__subtitle {
+        font-weight: 700;
+        line-height: normal;
+        @include fz(24);
+        color: $black;
+        margin-bottom: 28px;
+    }
+
+    // .catalog-col__text-block
+
+    &__text-block {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    // .catalog-col__text
+
+    &__text {
+        @include fz(18);
+        line-height: normal;
+        color: rgba(102, 102, 102, 1);
+    }
+
+    &__text:hover {
+        a {
+            text-decoration: underline;
+            color: darken(rgba(102, 102, 102, 1), 50%);
+        }
+    }
+
+    // .catalog-col__link
+
+    &__link {}
+}
